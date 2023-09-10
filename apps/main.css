@@ -1,0 +1,537 @@
+button {
+  overflow: visible;
+}
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+button,
+select {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+button {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring {
+  outline: ButtonText dotted 1px;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+body {
+  position: relative;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+  /* background: #f3f3f3; */
+  color: #282f3d;
+  font: normal normal normal 14px/1.6 "Open Sans", sans-serif;
+  top: initial !important;
+}
+a {
+  text-decoration: none;
+  color: #07f;
+}
+a:hover {
+  color: #ff8637;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+@supports (-webkit-overflow-scrolling: touch) {
+}
+.g-Icon--white {
+  background-image: url(https://www.mediafire.com/images/icons/svg_light/icons_sprite.svg);
+}
+.g-Icon--add {
+  background-position: -120px 0;
+}
+.g-Icon--share {
+  background-position: -192px 0;
+}
+.g-Icon--link {
+  background-position: -936px 0;
+}
+.g-Select {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 0;
+  border: 0 solid #e8e9ec;
+  border-width: 0 0 1px;
+  background: #fff
+    url(https://www.mediafire.com/images/icons/svg_dark/arrow_dropdown.svg)
+    right center no-repeat;
+  color: #282f4d;
+  margin: 0;
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0px;
+  transition: all 0.1s linear 0s;
+}
+.g-Select:focus {
+  outline: none;
+  border-color: #07d;
+  box-shadow: 0 1px 0 0 #07f;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  background: #fff;
+  width: 180px;
+  text-align: center;
+  text-transform: none;
+  color: #000;
+  z-index: 20;
+  white-space: normal;
+}
+li:hover > .tooltip {
+  display: block;
+}
+.tooltip.alt {
+  color: #fff;
+  background: #000;
+}
+.tooltip.point-down:before {
+  content: "";
+  font-size: 0px;
+  line-height: 0%;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 1px 5px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.tooltip.point-down:after {
+  content: "";
+  background: #fff;
+  width: 20px;
+  height: 10px;
+  position: absolute;
+}
+.tooltip.alt:after {
+  background: #000;
+}
+.tooltip.alt:before {
+  background: #000;
+}
+.tooltip.point-down {
+  bottom: 100%;
+  left: 50%;
+  margin: 0 0 12px -100px;
+}
+.tooltip.point-down:before {
+  bottom: -6px;
+  left: 50%;
+  margin: 0 0 0 -6px;
+}
+.tooltip.point-down:after {
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -10px;
+}
+.page {
+  padding-top: 10px;
+  padding-bottom: 85px;
+  background: #fff;
+  min-height: 800px;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+}
+.nonDLContentWrap {
+  min-height: 150px;
+}
+
+.ads .dl-btn-cont {
+  width: auto;
+  border-radius: 6px 6px 0 0;
+  margin: 0;
+}
+.center {
+  width: 604px;
+  height: 580px;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  top: 110px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 6px;
+}
+.dl-promo-cont {
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 10%);
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 8px;
+  background: #474747 10px 8px no-repeat;
+}
+.dl-promo-cont:hover {
+  color: #fff;
+}
+
+.dl-promo-cont > span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+  background: #757575;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.dl-info {
+  position: relative;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 20px 20px 0;
+}
+.intro.icon {
+  width: 100%;
+  background-position: 0 0 !important;
+  height: 50px;
+  position: static;
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+.intro > div {
+  margin: 0 240px 0 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.intro .filename {
+  font-weight: 300;
+  color: #787878;
+}
+.intro .filetype {
+  font-weight: 700;
+  color: #000;
+}
+.details {
+  font-weight: bold;
+  margin: 0 240px 20px 0;
+}
+.details span {
+  font-weight: normal;
+}
+.description h6 {
+  font-size: 13px;
+  margin: 0 240px 12px 0;
+}
+.description p {
+  margin: 0 240px 12px 0;
+}
+.sidebar {
+  position: absolute;
+  right: 0;
+  width: 213px;
+  top: 20px;
+}
+.sidebar > div {
+  padding: 10px;
+  background: #eeeeee;
+  margin-bottom: 10px;
+}
+.sidebar .filename {
+  display: inline-block;
+  font-weight: bold;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Download-compatibility > div {
+  margin-bottom: 15px;
+}
+.Download-compatibility .g-Select {
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.Download-compatibilityStatus {
+  font-size: 11px;
+  line-height: 14px;
+}
+.Download-compatibilityStatus span {
+  height: 18px;
+  width: 18px;
+  float: left;
+}
+.Download-compatibilityStatus p {
+  margin-left: 28px;
+}
+.Download-compatibilityStatus.is-compatible span {
+  background: url(check_circle_green.svg) center / 18px no-repeat;
+}
+.dl-btn-cont {
+  margin: 300px auto 200px;
+  background: #222835;
+  width: 604px;
+  padding: 20px;
+  border-radius: 6px;
+  overflow: auto;
+  font-size: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.dl-btn-cont > .icon {
+  display: inline-block;
+  width: 46px;
+  height: 58px;
+  margin-right: 15px;
+}
+.dl-btn-labelWrap {
+  position: absolute;
+  top: 25px;
+  left: 80px;
+  right: 290px;
+}
+.dl-btn-label {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+}
+.dl-btn-form {
+  float: right;
+  width: 250px;
+}
+.promoDownloadName {
+  margin-bottom: 8px;
+}
+.dl-utility-nav > ul {
+  margin: 0;
+}
+.dl-utility-nav ul li,
+.dl-utility-nav li {
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  position: relative;
+}
+.dl-utility-nav li a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.dl-utility-nav li:after {
+  margin: 0;
+}
+.dl-utility-nav .tooltip {
+  text-align: center;
+  padding: 5px 0;
+}
+.dl-utility-nav .tooltip.point-down:after {
+  height: 5px;
+}
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.icon.archive {
+  background-image: url(file-zip-v3.png);
+}
+#share-tooltip {
+  width: 135px;
+  left: 40px;
+}
+#copy-tooltip {
+  width: 154px;
+  left: 30px;
+}
+
+#bb1 {
+  position: absolute;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0070f0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  bottom: 15px;
+}
+
+.center-mobile {
+  display: none;
+  width: 100%;
+  position: relative;
+  background: #fff;
+  top: 110px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dl-btn-mob {
+  width: 70%;
+  align-items: center;
+  cursor: pointer;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  grid-column: span 2 / span 2;
+  --tw-bg-opacity: 1;
+  background-color: rgba(0,112,240,var(--tw-bg-opacity));
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+}
+
+.dl-btn-mob > .icon {
+  display: inline-block;
+  width: 46px;
+  height: 58px;
+  margin-right: 15px;
+}
+
+.info-file-mob {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.share-mob {
+  width: 75%;
+  display: grid;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+}
+
+.share-m {
+  position: relative;
+  display: flex;
+  padding: 0.5rem;
+  --tw-bg-opacity: 1;
+  color: #6B7280;
+  background-color: rgba(243,244,246,var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.share-m .material-icons {
+  font-size: 35px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .center {
+    right: auto;
+    padding: 0 22px;
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+  .center {
+    display: none;
+  }
+
+  .center-mobile {
+    display: flex;
+  }
+}
+
+      .header {
+        position: absolute;
+        width: 230px;
+        height: 80px;
+        margin: 12px 0 0 0;
+        font-size: 0;
+        background: #fff !important;
+      }
+
+      .dl-box {
+        position: relative;
+      }
+
+      .header > .logo > a {
+        display: table;
+        height: 35px;
+        width: 190px;
+        background: url(https://i.ibb.co/TWxtwk0/mf-logo-full-color.png)
+          0 0/180px auto no-repeat;
+        margin: 0 auto;
+        text-indent: -9999px;
+        opacity: 1;
+      }

@@ -1,5 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.mediafire.com	TRUE	/	FALSE	1999999999	__cf_bm	FMEnkliGsouZcT1z6pDBofKgGvMBN_gLd3V87l8BrEs-1694186441-0-AbJznJI8mLJpCeA3ss7X0eGYoeX8D6nIOqOTwXBgwBzZAZ+VgSS+/lT4c9LjZYi0Qu/oOANuRgIqf9COy5FCdFY=
-www.mediafire.com	TRUE	/	FALSE	1999999999	SameSite	None
-
