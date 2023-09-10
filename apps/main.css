@@ -65,7 +65,7 @@ p {
 @supports (-webkit-overflow-scrolling: touch) {
 }
 .g-Icon--white {
-  background-image: url(https://www.mediafire.com/images/icons/svg_light/icons_sprite.svg);
+  background-image: url(icons_sprite.svg);
 }
 .g-Icon--add {
   background-position: -120px 0;
@@ -84,7 +84,7 @@ p {
   border: 0 solid #e8e9ec;
   border-width: 0 0 1px;
   background: #fff
-    url(https://www.mediafire.com/images/icons/svg_dark/arrow_dropdown.svg)
+    url(arrow_dropdown.svg)
     right center no-repeat;
   color: #282f4d;
   margin: 0;
